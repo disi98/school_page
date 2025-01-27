@@ -1,46 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../statics/css/output/tw_output.css">
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <script src="https://unpkg.com/htmx.org@1.8.0"></script>
-        <title>PCEA - Contact Us</title>
-<!-- 
-        <style>
-            /* Custom styles for transitions */
-            .fade-in {
-                animation: fadeIn 1s;
-            }
-            @keyframes fadeIn {
-                from { opacity: 0; }
-                to { opacity: 1; }
-            }
-            .slide-in {
-                animation: slideIn 1s;
-            }
-            @keyframes slideIn {
-                from { transform: translateX(100%); }
-                to { transform: translateX(0); }
-            }
-            .zoom-in {
-                animation: zoomIn 1s;
-            }
-            @keyframes zoomIn {
-                from { transform: scale(0.5); }
-                to { transform: scale(1); }
-            }
-        </style> -->
-    </head>
-<body class="bg-gray-100">
-    
-    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 dark:border-gray-700">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../statics/css/output/tw_output.css">
+    <link rel="icon" href="../statics/img/PCEAschool.png" type="image/icon type">
+
+    <title>Contact - PCEA Schools</title>
+ 
+
+
+</head>
+<body class="font-sans">
+
+    <header class="sticky top-0 z-50 bg-white border-b-4 border-red-500 dark:border-gray-700">
         <nav class="bg-gray-100 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                <a href="#" class="flex items-center w-80">
-                    <img src="../statics/img/logo3.png" class="mr-3 h-vw sm:h-9" alt="Flowbite Logo" />
-                    <!-- <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">School Logo</span> -->
+                <a href="#" class="flex items-center justify-between w-vw">
+                    <img src="../statics/img/PCEAschool.png" class="w-14" alt="PCEA logo">
+                    <span class="self-center ml-5 text-2xl text-blue-800 font-semibold whitespace-nowrap uppercase dark:text-white">PCEA Schools</span>
                 </a>
                 <div class="flex items-center lg:order-2">
                     <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
@@ -54,13 +32,13 @@
                 <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
-                            <a href="index.html" class="block py-2 active:text-blue-700 pr-4 pl-3 text-lg text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                            <a href="index.html" class="block py-2 pr-4 pl-3 text-lg text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
                         </li>
                         <li>
-                            <a href="about.html" class="block py-2 pr-4 pl-3 text-lg text-gray-700 active:text-blue-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            <a href="about.html" class="block py-2 active:text-red-500 pr-4 pl-3 text-lg text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
                         </li>
                         <li>
-                            <a href="contact.html" class="block py-2 pr-4 pl-3 text-lg text-red-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            <a href="contact.html" class="block py-2 active:text-red-500 pr-4 pl-3 text-lg text-red-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                         </li>
                         <li>
                             <a href="academics.html" class="block py-2 pr-4 pl-3 text-gray-700 text-lg border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Academics</a>
@@ -68,17 +46,20 @@
                         <li>
                             <a href="events.html" class="block py-2 pr-4 pl-3 text-gray-700 text-lg border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Events</a>
                         </li>
-                        <!-- <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                        </li> -->
+
+                        <li>
+                            <a href="gallary.html" class="block py-2 pr-4 pl-3 text-gray-700 text-lg border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Gallary</a>
+                        </li>
+                       
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+
     <section class="bg-gray-500 ">
-        <div class="relative bg-cover bg-center h-[400px]" style="background-image: url('../statics/img/schoolhero.png')">
+        <div class="relative bg-cover bg-center h-[400px]" style="background-image: url('../statics/img/aboutslide1.jpg')">
             <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
               <div class="text-center text-white">
                 <h1 class="text-4xl font-bold pb-4">Get in touch with us</h1>
@@ -100,7 +81,7 @@
                         <span class="mr-2">
                             <i class="fas fa-map-marker-alt w-5 h-5 text-pink-600"></i>
                         </span>
-                        <p>Moi Drive, Nairobi</p>
+                        <p class="uppercase">P.o box 54053, 00200 Nairobi Kenya</p>
                     </div>
                 </div>
                 <hr>
@@ -110,7 +91,7 @@
                         <span class="mr-2">
                             <svg class="fas fa-envelope w-5 h-5 text-pink-600"></svg>
                         </span>
-                        <p>admisions@pcea-academy.com</p>
+                        <p> academypceaumoja@gmail.com</p>
                     </div>
                 </div>
                 <hr>
@@ -120,31 +101,26 @@
                         <span class="mr-2">
                             <i class="fas fa-phone w-5 h-5 text-pink-600"></i>
                         </span>
-                        <p>+254 705 388-810</p>
+                        <p>+254 0705 388-810</p>
                     </div>
                 </div>
                 <hr>
                 <div>
                     <h3 class="text-lg font-semibold">Find Us On</h3>
                     <div class="flex space-x-2">
-                        <a href="#" class="text-red-700">
+                        <a href="https://www.facebook.com/PCEAUMOJA1" target="_blank" class="text-red-700">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="text-red-700">
-                            <i class="fab fa-x-twitter"></i>
-                        </a>
-                      
-                        <a href="#" class="text-red-700">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="text-red-700">
+                                       
+                     
+                        <a href="https://www.youtube.com/@pceaumojaacademy3245" target="_blank" class="text-red-700">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="#" class="text-red-700">
+                        <a href="https://www.instagram.com/p.c.e.a2024/" target="_blank" class="text-red-700">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="text-red-700">
-                            <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/+2540705388810" target="_blank" class="text-red-700">
+                            <i class="fab fa-whatsapp text-green-500"></i>
                         </a>
                     </div>
                 </div>
@@ -194,28 +170,36 @@
     </section>
 
 
-    
-    <footer class="bg-orange-800 text-white py-8">
+    <a href="https://wa.me/+2540705388810" target="_blank" 
+        class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+            <path d="M20.52 3.481A11.938 11.938 0 0 0 12 0C5.383 0 0 5.374 0 12a11.899 11.899 0 0 0 2.148 6.748l-1.41 5.164a.655.655 0 0 0 .793.793l5.155-1.41A11.896 11.896 0 0 0 12 24c6.626 0 12-5.374 12-12a11.96 11.96 0 0 0-3.48-8.519ZM12 22.43a10.43 10.43 0 0 1-5.727-1.693.652.652 0 0 0-.469-.096l-3.795.987.99-3.763a.658.658 0 0 0-.1-.477A10.431 10.431 0 1 1 22.431 12c0 5.768-4.662 10.43-10.43 10.43Zm5.464-7.47-.013-.013c-.204-.1-1.202-.594-1.388-.66-.188-.064-.326-.1-.464.099-.14.2-.531.659-.65.799-.119.14-.242.152-.447.051-.204-.1-.866-.319-1.65-.947a6.16 6.16 0 0 1-1.127-1.133c-.239-.308-.4-.643-.448-.8-.048-.156-.005-.242.095-.342.098-.098.196-.217.292-.326.1-.1.133-.177.199-.296.065-.12.033-.225-.015-.316-.048-.089-.447-1.08-.613-1.484-.162-.404-.326-.338-.448-.342h-.384c-.129 0-.34.049-.518.242-.177.193-.676.66-.676 1.61 0 .95.692 1.87.788 1.999.096.13 1.363 2.083 3.3 2.915 1.937.833 1.937.555 2.287.524.35-.032 1.135-.46 1.295-.905.16-.446.16-.828.112-.906-.049-.08-.18-.129-.381-.225Z" />
+        </svg>
+    </a>
+
+
+
+    <footer class="bg-blue-900 text-gray-300 py-8">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 px-4">
           
           <!-- Left Column (Logo and Info) -->
           <div class="col-span-1 md:col-span-2">
-            <h2 class="text-xl font-bold mb-4">PCEA Academy</h2>
+            <h2 class="text-xl font-bold mb-4">PCEA Schools</h2>
             <p class="mb-4">You are welcomed the follwoing days in our institutions for administrative purposes: Monday to Friday: 0730 to 1700</p>
             <div class="flex space-x-3">
-              <a href="#" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
+              <a href="https://www.facebook.com/PCEAUMOJA1" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
-                <i class="fab fa-twitter"></i>
+              <a href="https://www.instagram.com/p.c.e.a2024/" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
+                <i class="fab fa-instagram"></i>
               </a>
-              <a href="#" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
+              <!-- <a href="#" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
                 <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
+              </a> -->
+              <!-- <a href="#" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
                 <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="#" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
+              </a> -->
+              <a href="https://www.youtube.com/@pceaumojaacademy3245" class="p-2 bg-white rounded-full text-red-800 hover:bg-gray-200">
                 <i class="fab fa-youtube"></i>
               </a>
             </div>
@@ -225,20 +209,20 @@
           <div class="col-span-1">
             <h3 class="text-lg font-semibold mb-4">Featured Links</h3>
             <ul class="space-y-2">
-              <li><a href="#" class="hover:underline">Admissions</a></li>
-              <li><a href="#" class="hover:underline">Academic Calendar</a></li>
-              <li><a href="#" class="hover:underline">Gallary</a></li>
-              <li><a href="#" class="hover:underline">Gallary</a></li>
-              <li><a href="#" class="hover:underline">Home</a></li>
+              <li><a href="./academics.html" class="hover:underline">Academics</a></li>
+              <li><a href="./about.html" class="hover:underline">About</a></li>
+              <li><a href="./gallary.html" class="hover:underline">Gallary</a></li>
+              <li><a href="./events.html" class="hover:underline">Events</a></li>
+              <li><a href="./index.html" class="hover:underline">Home</a></li>
             </ul>
           </div>
     
           <!-- Right Columns (Contact Info) -->
-          <div class="col-span-1">
-            <h3 class="text-lg font-semibold mb-4">PCEA Academy Address</h3>
-            <p class="mb-2"><i class="fas fa-map-marker-alt"></i> Moi Drive, Nairob</p>
+          <div class="col-span-1 text-gray-300">
+            <h3 class="text-lg font-semibold mb-4">Contacts & Address</h3>
+            <p class="mb-2 uppercase"><i class="fas fa-map-marker-alt"></i> P.o box 54053, 00200 Nairobi Kenya</p>
             <p class="mb-2"><i class="fas fa-phone"></i> +254 0705 388-810</p>
-            <p><i class="fas fa-envelope"></i> admisions@pcea-academy.com</p>
+            <p><i class="fas fa-envelope"></i> academypceaumoja@gmail.com</p>
           </div>
     
           <div class="col-span-1">
@@ -253,12 +237,12 @@
           <div class="space-y-5">
             <!-- Mission -->
             <div class="group relative">
-                <p class="mb-2 text-white font-medium flex items-center cursor-pointer">
-                    <i class="fas fa-burn mr-2"></i>
+                <p class="mb-2 text-gray-200 font-medium flex items-center cursor-pointer">
+                    <i class="fas fa-burn mr-2 text-teal-100"></i>
                     Mission
                 </p>
                 <div id="mission" 
-                    class="bg-pink-800 hidden group-hover:flex h-max w-56 text-white  p-4 rounded-lg items-end absolute shadow-lg">
+                    class="bg-pink-800  hidden group-hover:flex h-max w-48 text-white p-4 rounded-lg items-center absolute top-0 right-0 shadow-lg">
                     <div class="text-center">
                         We strive to prepare learners to become lifelong persons and responsible citizens ready to participate in and contribute to the global world now and future.
                     </div>
@@ -267,12 +251,12 @@
     
             <!-- Vision -->
             <div class="group relative">
-                <p class="mb-2 text-white font-medium flex items-center cursor-pointer">
-                    <i class="fas fa-calendar-check mr-2"></i>
+                <p class="mb-2 text-gray-200 font-medium flex items-center cursor-pointer">
+                    <i class="fas fa-calendar-check text-teal-100 mr-2"></i>
                     Vision
                 </p>
                 <div id="vission" 
-                    class="bg-pink-800 hidden group-hover:flex h-max w-56 text-white p-4 rounded-lg items-center absolute top-0 right-0 shadow-lg">
+                    class="bg-pink-800  hidden group-hover:flex h-max w-48 text-white p-4 rounded-lg items-center absolute top-0 right-0 shadow-lg">
                     <div class="text-center">
                         To become a leading and most preferred academy in the provision of quality, excellence, and holistic education in Kenya.
                     </div>
@@ -281,15 +265,16 @@
     
             <!-- Motto -->
             <div class="group relative">
-                <p class="mb-2 text-white font-medium flex items-center cursor-pointer">
-                    <i class="fas fa-edit text-white mr-2"></i>
+                <p class="mb-2 text-gray-200 font-medium flex items-center cursor-pointer">
+                    <i class="fas fa-edit text-teal-100 mr-2"></i>
                     Motto
                 </p>
                 <div id="motto" 
-                    class="bg-pink-800 hidden group-hover:flex h-max w-56 text-white p-4 rounded-lg items-center absolute top-0 right-0 shadow-lg">
+                    class="bg-pink-800  hidden group-hover:flex h-max w-48 text-gray-100 p-4 rounded-lg items-center absolute top-0 right-0 shadow-lg">
                     <div class="text-center">
                         Nurturing based on Christian tenets.
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -299,15 +284,14 @@
 
       </footer>
       <div>
-        <p class="text-center bg-black text-pink-800">© 2021 PCEA Umoja Academy. All rights reserved.</p>
+        <p class="text-center bg-blue-950 text-pink-500">PCEA Umoja Schools © 2025. All rights reserved.</p>
     </div>
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     <script src="../statics/js/flowbite.min.js"></script>
+    <script src="../statics/js/htmx.min.js"></script>
 
-
-    <script src="../statics/js/flowbite.min.js"></script>
 </body>
 </html>
