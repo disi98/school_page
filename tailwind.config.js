@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./templates/*.{html, js}', "./node_modules/flowbite/**/*.js"],
+  content: ['./templates/*.{html, js, php}', "./node_modules/flowbite/**/*.js"],
   theme: {
     screens: {
       sm: '480px',
